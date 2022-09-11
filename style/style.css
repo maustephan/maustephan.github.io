@@ -13,10 +13,14 @@ body{
   object-fit: cover;
   width: 40%;
 }
-/* .js .header */
-.header__btnMenu{
+.js .header__btnMenu{
   /* top: 0px; */
   position: fixed;
+  right: 0px;
+  z-index: 5;
+}
+.js .header__nav{
+  top: 70px;
   right: 0px;
   z-index: 5;
 }
@@ -35,6 +39,7 @@ body{
   border-bottom: 1px solid #ababab;
 }
 .header__nav a{
+  margin: 5px;
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -171,7 +176,7 @@ article{
   text-decoration: none;
 }
 
-@media screen and (min-width: 728px){
+@media screen and (min-width: 728px) and (min-width: 1024px){
   .container__grid{ /* grid PAI*/
       margin: 0;
       padding: 0;
@@ -191,28 +196,23 @@ article{
     grid-area: nav;
     width: 250px;
     background-color: black;
-    /* height: 600px; */
-    /* border: 1px solid red; */
-    /* margin-top: 60px; */
-    /* max-width: 0;   */
+
   }
   .logo img{
     max-width: 100%;
     width: 150px;
+    margin-left: 50px;
+    margin-bottom: 30px;
     object-fit: cover;
   }
   .header__btnMenu{
     display: none;
   }
-  .header__nav{
-    width: 250px;
-    /* height: 600px; */
-    
+  
+  .header__nav__projects a{
+    color: #63c6ae;
   }
-  .header__nav__projects{
-    background-color: rgb(190, 190, 190);
-  }
-  .header__nav a:hover{
+  .header__nav li:hover{
     background-color: white;
   }
 
@@ -233,11 +233,11 @@ article{
   
   .hero__title{
     margin-top: 5px;
-    color: #63c6ae;
+    color: #2cc59f;
     font-size: 2.5em;
   }
   .hero p{
-    color: #63c6ae;
+    color: #1dc79c;
     font-size: 25px;
   }
 
@@ -268,7 +268,7 @@ article{
     width: 495px;
   }
   .aboutme:hover, .aboutme__article:hover{
-    background-color: #63c6ae;
+    background-color: #1d6855;
   }
 
   .aboutme__text a{

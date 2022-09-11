@@ -41,6 +41,7 @@ function Menu(config){
         
         var _style = {
             maxHeight: 'calc(100vh - '+ _top +' )',
+            position: 'fixed',
             overflow: 'hidden'
         }
         
@@ -58,6 +59,7 @@ function Menu(config){
     function closeMenu(){
         var _style = {
             maxHeight: '0px',
+            position: 'none',
             overflow: 'hidden'
         }
         
