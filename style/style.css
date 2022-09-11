@@ -4,16 +4,26 @@ body{
 }
 .container__grid{
   font-family: sans-serif;
-  /* line-height: 1.5; */
-  /* font-size: 18px; */
 }
-.header__logo img{
-
+.logo{
+  background-color: black;
+}
+.logo img{
   max-width: 100%;
   object-fit: cover;
   width: 40%;
 }
+/* .js .header */
+.header__btnMenu{
+  /* top: 0px; */
+  position: fixed;
+  right: 0px;
+  z-index: 5;
+}
 
+.header__nav{
+  background-color: black;
+}
 .header__nav ul{
   margin: 0;
   padding: 0;
@@ -34,10 +44,17 @@ body{
   transition: .5s ease;
   font-weight: bold;
 }
+
+
+.header__nav__projects{
+  background-color: black;
+}
+
 .header__nav__projects h2{
   text-align: center;
   color: #63c6ae;
   text-transform: uppercase;
+  background-color: black;
 }
 .header__nav__projects ul{
   margin: 0;
@@ -67,7 +84,19 @@ body{
 .header__nav__projects a:hover{
   color: #428f7c;
 }
+.header__btnMenu{
+  float: right;
+  margin: 1.5em;
+  background-color: white;
+  border: 2px solid black;
+  font-size: 15px;
+}
+
+.js .header__nav{
+  transition: max-height 1s;
+}
 .hero{
+  /* display: block; */
   padding: 15px;
   background: url(../images/back_2.jpg);
   background-size: cover;
@@ -152,13 +181,36 @@ article{
         "nav main main"
         "nav footer footer";
       grid-template-columns: 250px auto;
-      grid-template-rows: 1fr;
+      grid-template-rows: auto;
       background-color: #ffffff;
+      
   }
   
   .header{ /* grid FILHO */
+    /* display: flex; */
     grid-area: nav;
+    width: 250px;
     background-color: black;
+    /* height: 600px; */
+    /* border: 1px solid red; */
+    /* margin-top: 60px; */
+    /* max-width: 0;   */
+  }
+  .logo img{
+    max-width: 100%;
+    width: 150px;
+    object-fit: cover;
+  }
+  .header__btnMenu{
+    display: none;
+  }
+  .header__nav{
+    width: 250px;
+    /* height: 600px; */
+    
+  }
+  .header__nav__projects{
+    background-color: rgb(190, 190, 190);
   }
   .header__nav a:hover{
     background-color: white;
@@ -213,7 +265,7 @@ article{
   }
   .aboutme__article{
     background-color: #eee;
-    width: 550px;
+    width: 495px;
   }
   .aboutme:hover, .aboutme__article:hover{
     background-color: #63c6ae;
