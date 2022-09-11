@@ -233,11 +233,13 @@ article{
   
   .hero__title{
     margin-top: 5px;
-    color: #2cc59f;
+    color: #45f5c9;
     font-size: 2.5em;
+    font-weight: bold;
   }
   .hero p{
-    color: #1dc79c;
+    /* color: #1dc79c; */
+    color: #b5e4d8;
     font-size: 25px;
   }
 
@@ -268,7 +270,7 @@ article{
     width: 495px;
   }
   .aboutme:hover, .aboutme__article:hover{
-    background-color: #1d6855;
+    background-color: #86cfbd;
   }
 
   .aboutme__text a{
